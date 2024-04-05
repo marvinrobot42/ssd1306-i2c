@@ -26,7 +26,7 @@ use crate::constants::{STHS34PF80_PART_ID, STHS34PF80_WHO_AM_I, STHS34PF80_RESET
 
 use embedded_hal::delay::DelayNs;
 use embedded_hal::i2c::{I2c, SevenBitAddress};
-// use libm::{powf, truncf}; 
+// use libm::{powf, truncf};
 use log::{debug, info};
 
 

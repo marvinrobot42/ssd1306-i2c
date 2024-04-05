@@ -1,4 +1,4 @@
-// no_std support 
+// no_std support
 #[allow(unused_imports)]
 #[warn(dead_code)]
 // use libm::{exp, round, trunc};

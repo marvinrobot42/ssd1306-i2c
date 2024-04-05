@@ -925,7 +925,7 @@ where
                     self.delayer.delay_ms(50);
             	    loop_count += 1;
             	    if (loop_count >= timeouts_50ms) {
-           	            timeout = true;
+           	            // timeout = true;
            	            return Err(Sths34pf80Error::MeasurementTimeout());
 		            }
                  }
@@ -936,12 +936,12 @@ where
                     self.delayer.delay_ms(50);
                     loop_count += 1;
                     if (loop_count >= timeouts_50ms) {
-                       timeout = true;
+                       // timeout = true;
                        return Err(Sths34pf80Error::MeasurementTimeout());
                     }
                 }
             } else {
-                timeout = true;
+                // timeout = true;
                 return Err(Sths34pf80Error::MeasurementTimeout());
             }
 		}	                   

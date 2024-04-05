@@ -1,4 +1,5 @@
-# STHS34PF80 &emsp; [![crates.io](https://img.shields.io/crates/v/sths34pf80)](https://crates.io/crates/sths34pf80)
+# STHS34PF80 &emsp; 
+[![crates.io](https://img.shields.io/crates/v/sths34pf80)](https://crates.io/crates/sths34pf80)
 [![License](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue.svg)](https://github.com/marvinrobot42/sths34pf80)
 [![Documentation](https://docs.rs/sths34pf80/badge.svg)](https://docs.rs/sths34pf80)
 

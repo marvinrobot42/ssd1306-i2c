@@ -10,7 +10,7 @@ description = "ST STHS34PF80 driver"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 license = "MIT OR Apache-2.0"
-keywords = ["driver", "sensor", "i2c", "sths34pf80", "presence detection"]
+keywords = ["driver", "sensor", "i2c", "sths34pf80"]
 categories = ["embedded", "no-std"]
 publish = true
 exclude = [

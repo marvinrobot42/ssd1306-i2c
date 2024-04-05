@@ -12,6 +12,7 @@ shock temperature detection (excessive heat change) and motion detection.
 Many configurable settings for the detection thresholds, data output rates, interrupt pin, low pass filters,
 sensitivity. 
 
+
 ### Features
 
 - updated to use embedded-hal version 1.0.x

@@ -2,7 +2,7 @@ use core::fmt::Formatter;
 
 use embedded_hal::i2c::{I2c, SevenBitAddress};
 
-/// All possible errors
+/// All possible errors 
 /// Display not implemented for no_std support
 pub enum Sths34pf80Error<I2C>
 where

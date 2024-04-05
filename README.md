@@ -33,12 +33,13 @@ sensitivity.
 
   
 
-## Notes
+#### Notes
 
-This driver is loosly based on STMicroelectronics STHS34PF80 driver.  A Sparkfun STHS34PF80 
-sensor board was used for this driver devlopment.
+This driver is loosly based on Sparkfun Arduino STHS34PF80 driver.  A Sparkfun STHS34PF80
+https://www.sparkfun.com/products/22494 sensor board was used for this driver development.
 
 ### Recent version history
+0.1.3  Documentation improvements
 0.1.0  Initial release.
 
 
@@ -62,7 +63,7 @@ the returns FUNC_STATUS enum to see which of the three values changed, then get 
  
 
 
-## Simple Example
+### Simple Example
 
 A more complete example is in the repository examples path
 ~~~~rust
@@ -110,7 +111,7 @@ fn main() -> Result<()> {
 ~~~~
 
 
-License
+### License
 ----
 
 You are free to copy, modify, and distribute this application with attribution under the terms of either

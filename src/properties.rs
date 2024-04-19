@@ -96,7 +96,7 @@ where
         Command::ChargePump(true).send(&mut self.iface)?;
         Command::AddressMode(AddrMode::Horizontal).send(&mut self.iface)?;
 
-        ///self.size.configure(&mut self.interface)?;
+        // self.size.configure(&mut self.interface)?;
         // match self.display_size {
         //     DisplaySize::Display128x32 => Command::ComPinConfig(false).send(&mut self.iface),
         //     DisplaySize::Display128x64  | DisplaySize::Display128x64NoOffset

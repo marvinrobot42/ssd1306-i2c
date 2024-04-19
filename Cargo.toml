@@ -1,16 +1,16 @@
 [package]
-name = "sths34pf80"
-version = "0.1.3"
+name = "ssd1306-i2c"
+version = "0.1.0"
 edition = "2021"
 
 authors = ["fordauthor42@gmail.com"]
-repository = "https://github.com/marvinrobot42/sths34pf80.git"
-description = "ST STHS34PF80 driver"
+repository = "https://github.com/marvinrobot42/ssd1306-i2c.git"
+description = "SSD 1306 I2C driver"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 license = "MIT OR Apache-2.0"
-keywords = ["driver", "sensor", "i2c", "sths34pf80"]
+keywords = ["driver", "sensor", "i2c", "ssd1306"]
 categories = ["embedded", "no-std"]
 publish = true
 exclude = [
@@ -20,16 +20,16 @@ exclude = [
     "Makefile.toml",
 ]
 
-[features]
-default = []
-
 [dependencies]
 log = { version = "0.4.18", default-features = false }
 # libm = "0.2.8"
-byteorder = { version = "1", default-features = false }
 embedded-hal = {version = "1.0"}
-num-traits = { version = "0.2", default-features = false }
-bitfield = "0.14.0"
+embedded-graphics-core = { version = "0.4.0", optional = true }
+
 
 [build-dependencies]
 embuild = "=0.31.4"
+
+[features]
+default = ["graphics"]
+graphics = ["embedded-graphics-core"]

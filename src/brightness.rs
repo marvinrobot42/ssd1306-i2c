@@ -1,5 +1,4 @@
 //! Display brightness
-
 /// Struct that holds display brightness
 #[derive(Debug, Copy, Clone, PartialEq, Eq)]
 pub struct Brightness {

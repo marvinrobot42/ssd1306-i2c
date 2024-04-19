@@ -1,7 +1,6 @@
 //! ssd1306  Communication Interface (I2C)
 //!
 
-
 pub mod i2c;
 
 use crate::Error;

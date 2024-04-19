@@ -1,6 +1,5 @@
 //! SSD1306 I2C Interface
 
-//use hal;
 use embedded_hal::{delay::DelayNs, i2c::I2c, i2c::ErrorType};
 
 use super::DisplayInterface;

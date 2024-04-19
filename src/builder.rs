@@ -8,7 +8,6 @@
 //!
 //! # Examples
 //!
-
 //! Connect over I2C, changing lots of options
 //!
 //! ```rust,no_run

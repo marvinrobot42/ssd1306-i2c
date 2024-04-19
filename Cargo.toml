@@ -8,7 +8,6 @@ repository = "https://github.com/marvinrobot42/sths34pf80.git"
 description = "SSD1306 I2C driver"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 license = "MIT OR Apache-2.0"
 keywords = ["driver", "sensor", "i2c", "ssd1306"]
 categories = ["embedded", "no-std"]

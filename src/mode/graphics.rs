@@ -1,5 +1,6 @@
 //! Buffered display module for use with the [embedded-graphics] crate
 //!
+//! 
 //! ```rust,no_run
 //! use embedded_graphics::{
 //!     pixelcolor::BinaryColor,

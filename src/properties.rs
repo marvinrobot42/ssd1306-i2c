@@ -1,5 +1,6 @@
 //! Container to store and set display properties
 
+
 use crate::{
     command::{Command, VcomhLevel, AddrMode},
     displayrotation::DisplayRotation,

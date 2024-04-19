@@ -1,7 +1,6 @@
 use super::interface::DisplayInterface;
 
 /// ssd1306 Commands
-
 /// Commands
 #[derive(Debug)]
 #[allow(dead_code)]

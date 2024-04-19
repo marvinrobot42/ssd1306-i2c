@@ -1,6 +1,7 @@
 //! ssd1306 I2C OLED display driver
 //!
 
+
 #![no_std]
 #![deny(missing_docs)]
 #![deny(missing_copy_implementations)]

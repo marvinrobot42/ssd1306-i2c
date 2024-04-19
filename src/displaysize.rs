@@ -1,5 +1,6 @@
 //! Display size
 
+
 /// Display size enumeration
 #[derive(Clone, Copy)]
 pub enum DisplaySize {

@@ -4,6 +4,7 @@
 //! builder. Used as a source to coerce the driver into richer modes like
 //! [`GraphicsMode`](../graphics/index.html).
 
+
 use crate::{
     interface::DisplayInterface, mode::displaymode::DisplayModeTrait, properties::DisplayProperties,
 };

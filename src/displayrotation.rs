@@ -1,5 +1,6 @@
 //! Display rotation
 
+
 /// Display rotation
 #[derive(Clone, Copy)]
 pub enum DisplayRotation {

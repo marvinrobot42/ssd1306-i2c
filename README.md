@@ -21,7 +21,7 @@ sensitivity.
 - designed for embedded use (ESP32-C3, -C6 and -S3 and STM32F3DISCOVERY)
 - configurable interrupt pin
 - data ready status based presence, motion and ambient shock measurement reads 
-- low pass filter configuration if needed
+- low pass filter configuration in needed
 - hysteresis getters and setters
 - sensivity getters and setters
 - gain getters and setters

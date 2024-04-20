@@ -112,21 +112,21 @@ fn main() -> Result<()> {
         .text_color(BinaryColor::On)
         .build();
 
-    let text_style_bold = MonoTextStyleBuilder::new()
-        .font(&FONT_6X13_BOLD)
-        .text_color(BinaryColor::On)
-        .build();
+  let text_style_bold = MonoTextStyleBuilder::new()
+    .font(&FONT_6X13_BOLD)
+    .text_color(BinaryColor::On)
+    .build();
 
-    info!("displaying Hello world! on LCD");
-    Text::with_baseline("Hello Rust World!....", Point::zero(), text_style_bold, Baseline::Top)
-        .draw(&mut display)
-        .unwrap();
-    info!("displaying Hello Rust! on LCD");
-    Text::with_baseline("SSD1306-I2C", Point::new(0, 19), text_style, Baseline::Top)
-        .draw(&mut display)
-        .unwrap();
+  info!("displaying Hello world! on LCD");
+  Text::with_baseline("Hello Rust World!....", Point::zero(), text_style_bold, Baseline::Top)
+    .draw(&mut display)
+    .unwrap();
+  info!("displaying Hello Rust! on LCD");
+  Text::with_baseline("SSD1306-I2C", Point::new(0, 19), text_style, Baseline::Top)
+    .draw(&mut display)
+    .unwrap();
 
-    display.flush().unwrap();
+  display.flush().unwrap();
 
 
   loop {

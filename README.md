@@ -7,6 +7,10 @@
 
 <https://github.com/marvinrobot42/ssd1306-i2c.git>
 
+## [Documentation](https://docs.rs/ssd1306-i2c)
+
+## [Examples](examples)
+
 [ssd1306]: https://www.digikey.com/htmldatasheets/production/2047793/0/0/1/ssd1306.html#pf13
 
 This crate is a fork of James Waples's SH1106 crate modifed for SSD1306 use updated to use 
@@ -38,6 +42,7 @@ quick job of migrating James's SH1106 crate from embedded-hal 0.2.x to 1.0, and 
 My Sparkfun SSD1306 LCD (LCD-23453) only supports I2C so I could not work with or test SPI.
 
 ### Recent version history
+  - 0.1.2  More documentation
   - 0.1.1  Some document typo fixes
   - 0.1.0  Initial release
 
@@ -61,7 +66,7 @@ esp-idf-hal = "0.43.0"  # an embedded-hal for your platform
 A more complete example is in the repository examples path.  See James's SSH1106 crate repository
 examples folder for more examples: https://github.com/jamwaffles/sh1106/tree/master/examples.
 
-~~~~rust
+```rust
 
 use ssd1306_i2c::{prelude::*, Builder}; 
 
@@ -139,7 +144,7 @@ fn main() -> Result<()> {
 
 }
     
-~~~~
+```
 
 
 ### License

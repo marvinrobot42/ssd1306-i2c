@@ -109,8 +109,8 @@ fn main() -> Result<()> {
   // creating MonoTextStyleBuilder
   let text_style = MonoTextStyleBuilder::new()
     .font(&FONT_6X10)
-        .text_color(BinaryColor::On)
-        .build();
+    .text_color(BinaryColor::On)
+    .build();
 
   let text_style_bold = MonoTextStyleBuilder::new()
     .font(&FONT_6X13_BOLD)

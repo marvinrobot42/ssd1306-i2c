@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue.svg)](https://github.com/marvinrobot42/ssd1306-i2c)
 [![Documentation](https://docs.rs/ssd1306-i2c/badge.svg)](https://docs.rs/ssd1306-i2c)
 
-## A Rust crate for SSD1306 LCD display over I2C 
+## A Rust crate for SSD1306 LCD display over I<sup>2</sup>C 
 
 <https://github.com/marvinrobot42/ssd1306-i2c.git>
 
@@ -13,14 +13,14 @@ This crate is a fork of James Waples's SH1106 modifed for SSD1306 use updated to
 
 The SSD1306 LCD contains old fashion 8 bit parallel interface, a SPI and I2C interface.  This crate
 only uses the I2C interface.  Also, note that this driver includes support for several display sizes 
-in only 128 x 64 is avialble for the SSD1306 (as far as I know).
+but only 128 x 64 is avialble for the SSD1306 (as far as I know).
 
 
 ### Features
 
 - updated to use embedded-hal version 1.0.x
 - support embedded-hal-bus 0.1.0 for I2C bus sharing
-- uses embedded-graphics for graphics abstraction
+- uses embedded-graphics crate for graphics abstraction
 - designed for embedded use (ESP32-C3, -C6 and -S3)
 - supports both primary and secondard I2C SSD1306 addresses
 - no_std embedded compatible
@@ -32,7 +32,7 @@ in only 128 x 64 is avialble for the SSD1306 (as far as I know).
 I wanted to add a LCD display to my home automation environmental sensor IoT creation but I could not
 find a crate for the SSD1306 that depends on embedded-hal 1.0.  It needs to have several devices on one
 I2C bus and since my sensors are embedded-hal 1.0 based the SSD1306 crate needs to be also.  So I did a
-quick job of migrating James's SH1106 crate from embedded-hal 0.2.x to 1.0.  Why start with SH1106 instead of his SSD1306 create: because the SH1106 seemed more modern and does not depend on other embedded-hal 0.2 crates like display-interface-i2c (which is four years old now).  Note that this ssd1306-i2c crate does not support SH1106 display because the display initializes are not compatible.
+quick job of migrating James's SH1106 crate from embedded-hal 0.2.x to 1.0, and modified it for the SSD1306 LCD.  Why start with SH1106 instead of his SSD1306 create: because the SH1106 seemed more modern and does not depend on other embedded-hal 0.2 crates like display-interface-i2c (which is four years old now).  Note that this ssd1306-i2c crate does not support SH1106 display because the display initialization is not compatible.
 
 My Sparkfun SSD1306 LCD (LCD-23453) only supports I2C so I could not work with or test SPI.
 
@@ -91,7 +91,7 @@ fn main() -> Result<()> {
 
   let mut display: GraphicsMode<_> = Builder::new()
     .with_size(DisplaySize::Display128x64NoOffset)
-    .with_i2c_addr(0x3d)
+    .with_i2c_addr(0x3d)  //or 0x3c
     .with_rotation(DisplayRotation::Rotate0)
     .connect_i2c(i2c_dev)
     .into();

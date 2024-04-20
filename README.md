@@ -5,7 +5,7 @@
 
 ## A Rust crate for SSD1306 LCD display over I2C 
 
-<https://github.com/marvinrobot42/ssd1306.git>
+<https://github.com/marvinrobot42/ssd1306-i2c.git>
 
 [ssd1306]: https://www.digikey.com/htmldatasheets/production/2047793/0/0/1/ssd1306.html#pf13
 

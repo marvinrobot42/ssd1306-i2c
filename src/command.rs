@@ -58,7 +58,7 @@ pub enum Command {
 }
 
 impl Command {
-    /// Send command to sh1106
+    /// Send command to ssd1306
     pub fn send<DI>(self, iface: &mut DI) -> Result<(), DI::Error>
     where
         DI: DisplayInterface,

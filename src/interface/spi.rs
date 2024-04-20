@@ -1,7 +1,7 @@
-//! sh1106 SPI interface
+//! SPI interface
 //! 
 /// SPI has not been migrated to embedded-hal 1.0,  do not attempt to include as is
-/// it is left here as a ToDo.  I have no way to test SPI with SSD1306 display presently. 
+/// it is left here as a ToDo.  I have no way to test SPI with SSD1306 display. 
 
 use hal::{self, digital::v2::OutputPin};
 
@@ -23,7 +23,7 @@ where
     DC: OutputPin<Error = PinE>,
     CS: OutputPin<Error = PinE>,
 {
-    /// Create new SPI interface for communciation with sh1106
+    /// Create new SPI interface for communciation
     pub fn new(spi: SPI, dc: DC, cs: CS) -> Self {
         Self { spi, dc, cs }
     }

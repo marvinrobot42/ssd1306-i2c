@@ -3,9 +3,9 @@
 
 pub mod i2c;
 
-use crate::Error;
 
-/// A method of communicating with sh1106
+
+/// A method of communicating with ssd1306
 pub trait DisplayInterface {
     /// Interface error type
     type Error;

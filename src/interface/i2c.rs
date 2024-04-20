@@ -15,7 +15,7 @@ impl<I2C> I2cInterface<I2C>
 where
     I2C: I2c,
 {
-    /// Create new sh1106 I2C interface
+    /// Create new ssd1306 I2C interface
     pub fn new(i2c: I2C, addr: u8) -> Self {
         Self { i2c, addr }
     }

@@ -8,7 +8,6 @@
 //!     primitives::{Circle, Line, PrimitiveStyle, Rectangle},
 //! };
 //! use ssd1306_i2c::{prelude::*, Builder};
-//! # let i2c = sh1106::test_helpers::I2cStub;
 //!
 //! let mut display: GraphicsMode<_> = Builder::new().connect_i2c(i2c).into();
 //!

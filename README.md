@@ -9,7 +9,8 @@
 
 [ssd1306]: https://www.digikey.com/htmldatasheets/production/2047793/0/0/1/ssd1306.html#pf13
 
-This crate is a fork of James Waples's SH1106 modifed for SSD1306 use updated to use embedded-hal 1.0.
+This crate is a fork of James Waples's SH1106 crate modifed for SSD1306 use updated to use 
+embedded-hal 1.0.
 
 The SSD1306 LCD contains old fashion 8 bit parallel interface, a SPI and I2C interface.  This crate
 only uses the I2C interface.  Also, note that this driver includes support for several display sizes 
@@ -19,10 +20,10 @@ but only 128 x 64 is avialble for the SSD1306 (as far as I know).
 ### Features
 
 - updated to use embedded-hal version 1.0.x
-- support embedded-hal-bus 0.1.0 for I2C bus sharing
+- supports embedded-hal-bus 0.1.0 for I2C bus sharing
 - uses embedded-graphics crate for graphics abstraction
 - designed for embedded use (ESP32-C3, -C6 and -S3)
-- supports both primary and secondard I2C SSD1306 addresses
+- supports both primary and secondary I2C SSD1306 addresses
 - no_std embedded compatible
 
   
@@ -37,6 +38,7 @@ quick job of migrating James's SH1106 crate from embedded-hal 0.2.x to 1.0, and 
 My Sparkfun SSD1306 LCD (LCD-23453) only supports I2C so I could not work with or test SPI.
 
 ### Recent version history
+  - 0.1.1  Some document typo fixes
   - 0.1.0  Initial release
 
 

@@ -25,8 +25,8 @@ but only 128 x 64 is avialble for the SSD1306 (as far as I know).
 - updated to use embedded-hal version 1.0.x
 - supports embedded-hal-bus 0.1.0 for I2C bus sharing
 - uses embedded-graphics crate for graphics abstraction
-- designed for embedded use (ESP32-C3, -C6 and -S3)
-- supports both primary and secondary I2C SSD1306 addresses
+- designed for embedded use (ESP32-C3, -C6 and -S3, etc.)
+- supports both primary and secondary SSD1306 I2C addresses (default is primary = 0x3c)
 - no_std embedded compatible
 
   
@@ -41,7 +41,7 @@ quick job of migrating James's SH1106 crate from embedded-hal 0.2.x to 1.0, and 
 My Sparkfun SSD1306 LCD (LCD-23453) only supports I2C so I could not work with or test SPI.
 
 ### Recent version history
-  - 0.1.3  More documentation
+  - 0.1.4  More documentation
   - 0.1.1  Some document typo fixes
   - 0.1.0  Initial release
 

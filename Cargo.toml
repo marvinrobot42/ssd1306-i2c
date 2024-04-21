@@ -1,11 +1,12 @@
 [package]
 name = "ssd1306-i2c"
-version = "0.1.3"
+version = "0.1.4"
 edition = "2021"
 
 authors = ["fordauthor42@gmail.com"]
-repository = "https://github.com/marvinrobot42/sths34pf80.git"
 description = "SSD1306 I2C driver"
+documentation = "https://docs.rs/ssd1306-i2c"
+repository = "https://github.com/marvinrobot42/ssd1306-i2c"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 license = "MIT OR Apache-2.0"

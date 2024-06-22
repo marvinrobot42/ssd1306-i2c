@@ -1,4 +1,5 @@
-# SSD3306 I2C &emsp; 
+# SSD1306 I2C &emsp;
+
 [![crates.io](https://img.shields.io/crates/v/ssd1306-i2c)](https://crates.io/crates/ssd1306-i2c)
 [![License](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue.svg)](https://github.com/marvinrobot42/ssd1306-i2c)
 [![Documentation](https://docs.rs/ssd1306-i2c/badge.svg)](https://docs.rs/ssd1306-i2c)

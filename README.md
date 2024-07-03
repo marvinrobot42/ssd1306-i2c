@@ -16,7 +16,7 @@
 This crate is a fork of James Waples's SH1106 crate modifed for SSD1306 use updated to use 
 embedded-hal 1.0.
 
-The SSD1306 LCD contains old fashion 8 bit parallel interface, a SPI and I2C interface.  This crate
+The SSD1306 OLED contains old fashion 8 bit parallel interface, a SPI and I2C interface.  This crate
 only uses the I2C interface.  Also, note that this driver includes support for several display sizes 
 but only 128 x 64 is avialble for the SSD1306 (as far as I know).
 
@@ -34,14 +34,15 @@ but only 128 x 64 is avialble for the SSD1306 (as far as I know).
 
 #### Notes
 
-I wanted to add a LCD display to my home automation environmental sensor IoT creation but I could not
+I wanted to add a LCD/OLED display to my home automation environmental sensor IoT creation but I could not
 find a crate for the SSD1306 that depends on embedded-hal 1.0.  It needs to have several devices on one
 I2C bus and since my sensors are embedded-hal 1.0 based the SSD1306 crate needs to be also.  So I did a
-quick job of migrating James's SH1106 crate from embedded-hal 0.2.x to 1.0, and modified it for the SSD1306 LCD.  Why start with SH1106 instead of his SSD1306 create: because the SH1106 seemed more modern and does not depend on other embedded-hal 0.2 crates like display-interface-i2c (which is four years old now).  Note that this ssd1306-i2c crate does not support SH1106 display because the display initialization is not compatible.
+quick job of migrating James's SH1106 crate from embedded-hal 0.2.x to 1.0, and modified it for the SSD1306 LOED.  Why start with SH1106 instead of his SSD1306 create: because the SH1106 seemed more modern and does not depend on other embedded-hal 0.2 crates like display-interface-i2c (which is four years old now).  Note that this ssd1306-i2c crate does not support SH1106 display because the display initialization is not compatible.
 
-My Sparkfun SSD1306 LCD (LCD-23453) only supports I2C so I could not work with or test SPI.
+My Sparkfun SSD1306 OLED (LCD-23453) only supports I2C so I could not work with or test SPI.
 
 ### Recent version history
+  - 0.1.5  another typo fix in README.md (thanks to Mr. Stelter)
   - 0.1.4  More documentation
   - 0.1.1  Some document typo fixes
   - 0.1.0  Initial release
@@ -124,11 +125,11 @@ fn main() -> Result<()> {
     .text_color(BinaryColor::On)
     .build();
 
-  info!("displaying Hello world! on LCD");
+  info!("displaying Hello world! on LCD-OLED");
   Text::with_baseline("Hello Rust World!....", Point::zero(), text_style_bold, Baseline::Top)
     .draw(&mut display)
     .unwrap();
-  info!("displaying Hello Rust! on LCD");
+  info!("displaying Hello Rust! on LCD-OLED");
   Text::with_baseline("SSD1306-I2C", Point::new(0, 19), text_style, Baseline::Top)
     .draw(&mut display)
     .unwrap();
